@@ -62,7 +62,7 @@ html {
     position: absolute;
     top: 52%;
     left: 0;
-    right: 10%;
+    right: 8%;
     color: #FFF;
     text-align: right;
     font-family: "lato", sans-serif;
@@ -90,16 +90,16 @@ html {
 /* PROGRESS */
 .progress {
 	background-color: #e5e9eb;
+
 	height: 0.25em;
 	position: relative;
-	right: 18%;
+	right: 12%;
 	width: 48em;
 }
 .progress-bar {
 	animation-duration: 3s;
 	animation-name: width;
 	background: linear-gradient(to right, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
-
   animation-iteration-count:infinite;
 	background-size: 48em 0.25em;
 	height: 100%;
