@@ -54,18 +54,43 @@ function calculateTotal() {
   document.getElementById('salary-calculated').innerHTML = "$" + calculatedSalary + ".";
 }
 
+function updateFalcon(pledge) {
+	var currentLoc = parseInt(document.getElementById('falc').style.left.slice(0,-2));
+	var add = pledge + currentLoc;
+	document.getElementById('falc').style.left = add + 'px';
 
-
-/* I wanted to figure out how to include "a" or "an" gramatically before the select element, dependent on which option is selected, but that seems to be, like, crazy difficult for my skill level.
-
-http://jsfiddle.net/adamzr/3yhFS/ 
-
-something with that?
-
-function properArticle() {
-  var indefiniteArticle = "an";
-  document.getElementById('indefinite-article')
-  .innerHTML = indefiniteArticle;
 }
-properArticle ();
-*/
+
+function updateEnterprise(pledge) {
+
+	var currentLoc = parseInt(document.getElementById('entr').style.left.slice(0,-2));
+	var add = pledge + currentLoc;
+	document.getElementById('entr').style.left = add + 'px';
+
+}
+
+function update2() {
+          
+             var theForm = document.forms["wage-gap"];
+             var initialSalaryAmount = theForm.elements["salary-initial"]; 
+ 			 var initialSalary = 0;
+ 			 
+ 			 //if the textbox is not blank
+ 			 if (initialSalaryAmount.value != "") {
+   				 initialSalary = parseInt(initialSalaryAmount.value);
+   				 
+  			  }
+
+  			  if (team.value == "latina") {
+  			    updateFalcon(initialSalary); 
+  			    initialSalary = 0;
+  			    theForm.reset();
+        	  } else {
+        	    updateEnterprise(initialSalary);
+        	    initialSalary = 0;
+        	    theForm.reset();
+        	  }
+        	  
+        	  
+}
+

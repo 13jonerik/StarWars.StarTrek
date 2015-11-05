@@ -2,14 +2,12 @@
 <html>
 <head>
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Work+Sans:300,400' rel='stylesheet' type='text/css'>
+    
     <link href="main.css" rel="stylesheet" type='text/css'>
     <script type='text/javascript' src='progress.js'></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
-<link href='https://fonts.googleapis.com/css?family=Work+Sans:300,400' rel='stylesheet' type='text/css'>
 
     <div id='stars'></div>
     <div id='stars2'></div>
@@ -18,56 +16,52 @@
         <span>STAR WARS vs STAR TREK</span><br/>
     </div>
     
-    <div id='totalJedi'>
-    	<span>$13333</span>
-    </div>
-    
-    <div id='totalTrek'>
-    	<br>
-    	<span>$14444</span>
-    </div>
-  
-  <!--div class = 'giant-letters'>$</div-->
-  <form action="" class="wage-gap" id="wage-gap" onsubmit="return false;">  
-
-    <br><br><br><br><br><br><br>
-    <div id = 'pledge'>
-    	<span>PLEDGE YOUR ALLEGIANCE</span><br>
-    	
-    	<input type="number" min="0" step="5" placeholder = " $10" id="salary-initial" name="salary-initial"/>
-    	<span> BECAUSE I AM A </span><select class="input">
-          <option value="latina">
-               JEDI
-          </option>
-          <option value="black">
-              TREKKIE
-          </option>    
-      </select>
-      </input>
-    </div>
-  </form>
-    
-    
-	
-
-    
     <div class="container">
         <br><br><br><br><br>
-		<img src = './images/falcon.png' style = "width:132px;height:88px;position:absolute;top:50px;left:-220px;z-index:1;">
+		<img id='falc' src = './images/falcon.png' style = "width:132px;height:88px;position:absolute;top:50px;left:-52px;z-index:1;">
 		
         <div class="progress">
-            <div class="progress-bar"></div>
+            <div class="progress-bar-falcon"></div>
         </div>
         <br><br><br><br><br><br>
-      	<img src = './images/enterprise.png' style = "width:136px;height:88px;position:absolute;top:182px;left:-220px;z-index:1">
+      	<img id='entr' src = './images/enterprise.png' style = "width:136px;height:88px;position:absolute;top:182px;left:-52px;z-index:1;">
         <div class="progress">
-            <div class="progress-bar"></div>
+            <div class="progress-bar-enterprise"></div>
         </div>
-        
         
     </div> 
 
-	<script src="./progress.js"></script>
+  <form action="" class="wage-gap" id="wage-gap" onsubmit= "return false">  
+
+    <br><br><br><br>
+    <div id = 'pledge'>
+    	<span>PLEDGE YOUR ALLEGIANCE</span><br>
+    	
+    	<input placeholder = "   $" id="salary-initial" name="salary-initial"/>
+    	<span> PROVES I AM A</span>
+    	
+    	<select class="input" id= "team" >
+          
+          <option value="latina">
+               <span>JEDI</span>
+          </option>
+          <option value="black">
+              TREKKIE
+          </option>
+          
+      </select>
+      <div class="button-circle" onClick=update2()>
+  			<div class="gradient"></div>
+  			<div class="button"></div>
+	  </div>
+	  
+      </input>
+    </div>
+    
+  
+  </form>
+    
+  <script src="./progress.js"></script>
 
 
 </body>
