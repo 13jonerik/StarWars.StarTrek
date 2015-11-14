@@ -36,25 +36,22 @@ function updateEnterprise(pledge) {
 function update2() {
           
              var theForm = document.forms["starting-point"];
-             var initialSalaryAmount = theForm.elements["start"]; 
- 			 var initialSalary = 0;
+             var initialShipLoc = theForm.elements["start"]; 
+ 			 var initialShip = 0;
  			 
- 			 //if the textbox is not blank
- 			 if (initialSalaryAmount.value != "") {
-   				 initialSalary = parseInt(initialSalaryAmount.value);
-   				 
+ 			 if (initialShipLoc.value != "") {
+   				 initialShip = parseInt(initialShipLoc.value); 
   			  }
 
   			  if (team.value == "wars") {
-  			    updateFalcon(initialSalary); 
-  			    initialSalary = 0;
-  			    initialSalaryAmount.reset()
+  			    updateFalcon(initialShip); 
+  			    initialShip = 0;
+  			    initialShipLoc.reset()
         	  } else {
-        	    updateEnterprise(initialSalary);
-        	    initialSalary = 0;
-        	    initialSalaryAmount.reset()
+        	    updateEnterprise(initialShip);
+        	    initialShip = 0;
+        	    initialShipLoc.reset()
         	  }
-        	  
-        	  
+        	    
 }
 
