@@ -229,7 +229,7 @@ body {
   font-weight: 300;
 }
 
-.wage-gap {
+.starting-point {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -238,7 +238,7 @@ body {
 }
 
 
-.wage-gap::first-line {
+.starting-point::first-line {
   line-height: 1;
 }
 

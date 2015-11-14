@@ -35,8 +35,8 @@ function updateEnterprise(pledge) {
 
 function update2() {
           
-             var theForm = document.forms["wage-gap"];
-             var initialSalaryAmount = theForm.elements["salary-initial"]; 
+             var theForm = document.forms["starting-point"];
+             var initialSalaryAmount = theForm.elements["start"]; 
  			 var initialSalary = 0;
  			 
  			 //if the textbox is not blank
@@ -45,7 +45,7 @@ function update2() {
    				 
   			  }
 
-  			  if (team.value == "latina") {
+  			  if (team.value == "wars") {
   			    updateFalcon(initialSalary); 
   			    initialSalary = 0;
   			    initialSalaryAmount.reset()
